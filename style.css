@@ -1,31 +1,41 @@
-/* General Reset and Base Styles */
+/* ========================================== */
+/* GENERAL RULES: Affects the whole website   */
+/* ========================================== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* This sets the font for the entire website */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    background-color: #121218; /* Dark theme background */
+    /* The very dark grey/black background of the site */
+    background-color: #121218; 
+    /* The default text color (white) */
     color: #ffffff;
     line-height: 1.6;
 }
 
-/* Header & Navigation */
+/* ========================================== */
+/* HEADER & NAVIGATION BAR                    */
+/* ========================================== */
 header {
     background-color: #1e1e24;
     padding: 1rem 0;
     text-align: center;
-    border-bottom: 3px solid #ffcc00; /* Yellow accent from logo */
+    /* The yellow line sitting under the navigation bar */
+    border-bottom: 3px solid #ffcc00; 
 }
 
+/* Logo image size control */
 .logo-container img {
     max-width: 250px;
     height: auto;
     margin-bottom: 1rem;
 }
 
+/* How the menu links line up horizontally */
 nav ul {
     list-style: none;
     display: flex;
@@ -34,6 +44,7 @@ nav ul {
     flex-wrap: wrap;
 }
 
+/* How the menu text looks */
 nav a {
     color: #ffffff;
     text-decoration: none;
@@ -42,20 +53,24 @@ nav a {
     transition: color 0.3s ease;
 }
 
+/* Color of the menu text when you hover a mouse over it */
 nav a:hover {
     color: #ffcc00;
 }
 
-/* Main Content Area */
+/* ========================================== */
+/* PAGE LAYOUT & BOXES                        */
+/* ========================================== */
 main {
+    /* Prevents the website from stretching too wide on massive monitors */
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
 }
 
-/* Hero Event Section */
+/* The big blue announcement box on the homepage */
 .hero-event {
-    background-color: #0088cc; /* Blue matching the FCBD flyer */
+    background-color: #0088cc;
     border-radius: 12px;
     padding: 2rem;
     text-align: center;
@@ -71,31 +86,21 @@ main {
     margin-bottom: 0.5rem;
 }
 
-.hero-event p {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    font-weight: bold;
-}
-
-.hero-image {
-    max-width: 100%;
-    border-radius: 8px;
-    margin-top: 1rem;
-}
-
-/* Info Grid Layout */
+/* This is the invisible grid that holds the dark grey info boxes */
 .info-grid {
     display: grid;
+    /* This line automatically moves boxes to a new row on small mobile screens */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.5rem;
 }
 
-/* Individual Cards */
+/* The styling for the individual dark grey boxes (Cards) */
 .card {
     background-color: #1e1e24;
     padding: 1.5rem;
     border-radius: 12px;
-    border-left: 4px solid #cc0000; /* Red accent from logo */
+    /* The red strip on the left side of every box */
+    border-left: 4px solid #cc0000; 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -103,15 +108,19 @@ main {
     font-size: 1.5rem;
     margin-bottom: 1rem;
     text-transform: uppercase;
-    color: #ffcc00;
+    color: #ffcc00; /* Yellow headers inside the boxes */
 }
 
-/* Button Styling */
+/* ========================================== */
+/* BUTTONS & FOOTER                           */
+/* ========================================== */
+
+/* The blue Facebook button */
 .btn {
     display: inline-block;
     margin-top: 1rem;
     padding: 0.5rem 1.5rem;
-    background-color: #3b5998; /* Facebook blue */
+    background-color: #3b5998; 
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -123,7 +132,6 @@ main {
     background-color: #2d4373;
 }
 
-/* Footer */
 footer {
     text-align: center;
     padding: 2rem;
