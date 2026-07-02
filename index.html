@@ -6,6 +6,7 @@
     <title>The Secret Lair | Comics, Toys, Games</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        /* Two-column layout for the pull list */
         .two-column-list {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -14,7 +15,7 @@
         }
         @media (max-width: 768px) {
             .two-column-list {
-                grid-template-columns: 1fr;
+                grid-template-columns: 1fr; /* Stacks into one column on small phones */
             }
         }
     </style>
@@ -28,7 +29,6 @@
         <nav>
             <ul>
                 <li><a href="index.html">HOME</a></li>
-                <li><a href="live.html">LIVE UPDATES</a></li>
                 <li><a href="releases.html">UPCOMING RELEASES</a></li>
                 <li><a href="newsletter.html">NEWSLETTER & COMMUNITY</a></li>
                 <li><a href="staff.html">STAFF</a></li>
@@ -100,6 +100,15 @@
                 <p style="font-size: 1.1rem; margin-bottom: 1rem;">We are Harrisonburg's premier destination for comic books, graphic novels, toys, and tabletop gaming. Whether you're a lifelong collector or just getting started, our community has a place for you.</p>
                 <p style="font-size: 1.1rem; color: #ffcc00; font-weight: bold; margin-bottom: 1.5rem;">Want to stay in the loop? The absolute BEST way to stay informed about daily updates, new arrivals, and sudden event changes is to follow our Facebook page!</p>
                 <a href="https://www.facebook.com/secretlaircomics" target="_blank" class="btn" style="font-size: 1.1rem; padding: 0.8rem 2rem;">Follow Us on Facebook</a>
+            </div>
+        </section>
+
+        <section style="text-align: center; margin-bottom: 3rem;">
+            <h2 style="color: #ffcc00; font-size: 2rem; text-transform: uppercase; margin-bottom: 1rem;">Live Store Updates</h2>
+            <p style="color: #aaaaaa; margin-bottom: 2rem;">Watch our timeline below for the newest arrivals and event announcements!</p>
+            
+            <div style="background-color: #ffffff; display: inline-block; border-radius: 8px; overflow: hidden; border: 4px solid #3b5998; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);">
+                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fsecretlaircomics&tabs=timeline&width=350&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId" width="350" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
             </div>
         </section>
 
