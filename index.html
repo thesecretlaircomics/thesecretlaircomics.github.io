@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Secret Lair | Comics, Toys, Games</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* This special code creates the two-column layout for the pull list */
+        .two-column-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            text-align: left;
+        }
+        @media (max-width: 768px) {
+            .two-column-list {
+                grid-template-columns: 1fr; /* Stacks into one column on small phones */
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -37,39 +51,45 @@
                 <h2 style="color: #ffffff; text-align: center; margin-bottom: 1rem; text-transform: uppercase;">This Week's Pull List</h2>
                 <p style="color: #aaaaaa; text-align: center; margin-bottom: 2rem;">New stuff coming out in September we think you should check-out!</p>
                 
-                <h3 style="color: #0088cc; margin-bottom: 0.5rem;">Indie / Other</h3>
-                <ul style="list-style-type: none; margin-bottom: 1.5rem; padding-left: 1rem;">
-                    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffcc00;">Firefly #1</strong> - As this series begins, Mal Reynolds is desperate for cash...</li>
-                    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffcc00;">Mark Spears Graveyard Shift #1</strong> - From an abandoned funeral home known as The Office... (*Polybag Version*)</li>
-                    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffcc00;">Crowbound #1</strong> - From creators Jeff Lemire and Dustin Nguyen comes Crowbound.</li>
-                    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffcc00;">Spawn 77 #1</strong> - In 1977, a young artist named Todd McFarlane had his first ideas...</li>
-                    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffcc00;">Deicidium Returned OGN Vol 1</strong> - In a future rebuilt from the ashes of war...</li>
-                    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffcc00;">Exquisite Corpses: The Fox Mask Killer #1</strong> - Among killers-for-hire, there are a select few feared...</li>
-                    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffcc00;">That Texas Blood: Hell Comes to Allison Ranch #1</strong> - Sheriff Joe Bob Coates and Deputy Wilson Hart...</li>
-                    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffcc00;">Dungeon Crawler Carl TPB Vol 2</strong> - The second collected edition is hitting shelves!</li>
-                    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffcc00;">Arrivals #1</strong> - A generation after the disappearance of astronaut Tajo Vallar...</li>
-                    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffcc00;">Beneath the Trees Where Nobody Sees Halloween Special</strong> - Years have passed since Samantha Strong left Woodbrook...</li>
-                    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffcc00;">Fixation #1</strong> - When superfan Taylor Van Owens wins a contest...</li>
-                    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffcc00;">Archie #1</strong> - A new day is dawning in Riverdale...</li>
-                    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffcc00;">Forever Home #1</strong> - Prepare to challenge the limits of time...</li>
-                </ul>
+                <div class="two-column-list">
+                    <div>
+                        <h3 style="color: #0088cc; margin-bottom: 0.5rem; text-transform: uppercase;">Indie / Other</h3>
+                        <ul style="list-style-type: none; padding-left: 0;">
+                            <li style="margin-bottom: 0.5rem;"><strong style="color: #ffcc00;">Firefly #1</strong> - As this series begins, Mal Reynolds is desperate for cash...</li>
+                            <li style="margin-bottom: 0.5rem;"><strong style="color: #ffcc00;">Mark Spears Graveyard Shift #1</strong> - From an abandoned funeral home known as The Office... (*Polybag Version*)</li>
+                            <li style="margin-bottom: 0.5rem;"><strong style="color: #ffcc00;">Crowbound #1</strong> - From creators Jeff Lemire and Dustin Nguyen comes Crowbound.</li>
+                            <li style="margin-bottom: 0.5rem;"><strong style="color: #ffcc00;">Spawn 77 #1</strong> - In 1977, a young artist named Todd McFarlane had his first ideas...</li>
+                            <li style="margin-bottom: 0.5rem;"><strong style="color: #ffcc00;">Deicidium Returned OGN Vol 1</strong> - In a future rebuilt from the ashes of war...</li>
+                            <li style="margin-bottom: 0.5rem;"><strong style="color: #ffcc00;">Exquisite Corpses: The Fox Mask Killer #1</strong> - Among killers-for-hire, there are a select few feared...</li>
+                            <li style="margin-bottom: 0.5rem;"><strong style="color: #ffcc00;">That Texas Blood: Hell Comes to Allison Ranch #1</strong> - Sheriff Joe Bob Coates and Deputy Wilson Hart...</li>
+                            <li style="margin-bottom: 0.5rem;"><strong style="color: #ffcc00;">Dungeon Crawler Carl TPB Vol 2</strong> - The second collected edition is hitting shelves!</li>
+                            <li style="margin-bottom: 0.5rem;"><strong style="color: #ffcc00;">Arrivals #1</strong> - A generation after the disappearance of astronaut Tajo Vallar...</li>
+                            <li style="margin-bottom: 0.5rem;"><strong style="color: #ffcc00;">Beneath the Trees Where Nobody Sees Halloween Special</strong> - Years have passed since Samantha Strong left Woodbrook...</li>
+                            <li style="margin-bottom: 0.5rem;"><strong style="color: #ffcc00;">Fixation #1</strong> - When superfan Taylor Van Owens wins a contest...</li>
+                            <li style="margin-bottom: 0.5rem;"><strong style="color: #ffcc00;">Archie #1</strong> - A new day is dawning in Riverdale...</li>
+                            <li style="margin-bottom: 0.5rem;"><strong style="color: #ffcc00;">Forever Home #1</strong> - Prepare to challenge the limits of time...</li>
+                        </ul>
+                    </div>
 
-                <h3 style="color: #cc0000; margin-bottom: 0.5rem;">Marvel</h3>
-                <ul style="list-style-type: none; margin-bottom: 1.5rem; padding-left: 1rem;">
-                    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffcc00;">Alien vs X-Men #1</strong> - They went looking for a Phoenix egg. They found something else.</li>
-                    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffcc00;">Avengers #1</strong> - In the wake of Armageddon a new team assembles!</li>
-                    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffcc00;">Doom All on One #1</strong> - For decades, Doctor Doom challenged the demon Mephisto...</li>
-                    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffcc00;">Infernal Hulk vs Wolverine #1</strong> - When the X-Men learn the location of mutants abducted...</li>
-                    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffcc00;">Midnight Fantastic Four #1</strong> - An obsessive scientist delves into the secrets of the universe...</li>
-                    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffcc00;">Muppets take the Marvel Universe #1</strong> - To celebrate the 50th Anniversary of The Muppet Show...</li>
-                    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffcc00;">Thor #801</strong> - Sigurd Jarlson is an ordinary man but he alone can call Asgard's greatest hero back...</li>
-                    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffcc00;">Wolverine Paradise #1</strong> - Logan steps away from the X-Men for Miami!</li>
-                </ul>
+                    <div>
+                        <h3 style="color: #cc0000; margin-bottom: 0.5rem; text-transform: uppercase;">Marvel</h3>
+                        <ul style="list-style-type: none; margin-bottom: 1.5rem; padding-left: 0;">
+                            <li style="margin-bottom: 0.5rem;"><strong style="color: #ffcc00;">Alien vs X-Men #1</strong> - They went looking for a Phoenix egg. They found something else.</li>
+                            <li style="margin-bottom: 0.5rem;"><strong style="color: #ffcc00;">Avengers #1</strong> - In the wake of Armageddon a new team assembles!</li>
+                            <li style="margin-bottom: 0.5rem;"><strong style="color: #ffcc00;">Doom All on One #1</strong> - For decades, Doctor Doom challenged the demon Mephisto...</li>
+                            <li style="margin-bottom: 0.5rem;"><strong style="color: #ffcc00;">Infernal Hulk vs Wolverine #1</strong> - When the X-Men learn the location of mutants abducted...</li>
+                            <li style="margin-bottom: 0.5rem;"><strong style="color: #ffcc00;">Midnight Fantastic Four #1</strong> - An obsessive scientist delves into the secrets of the universe...</li>
+                            <li style="margin-bottom: 0.5rem;"><strong style="color: #ffcc00;">Muppets take the Marvel Universe #1</strong> - To celebrate the 50th Anniversary of The Muppet Show...</li>
+                            <li style="margin-bottom: 0.5rem;"><strong style="color: #ffcc00;">Thor #801</strong> - Sigurd Jarlson is an ordinary man but he alone can call Asgard's greatest hero back...</li>
+                            <li style="margin-bottom: 0.5rem;"><strong style="color: #ffcc00;">Wolverine Paradise #1</strong> - Logan steps away from the X-Men for Miami!</li>
+                        </ul>
 
-                <h3 style="color: #3b5998; margin-bottom: 0.5rem;">DC</h3>
-                <ul style="list-style-type: none; padding-left: 1rem;">
-                    <li style="margin-bottom: 0.5rem;"><strong style="color: #ffcc00;">Teen Titans #1</strong> - When one of their own vanishes after attending a rally for Ascend...</li>
-                </ul>
+                        <h3 style="color: #3b5998; margin-bottom: 0.5rem; text-transform: uppercase;">DC</h3>
+                        <ul style="list-style-type: none; padding-left: 0;">
+                            <li style="margin-bottom: 0.5rem;"><strong style="color: #ffcc00;">Teen Titans #1</strong> - When one of their own vanishes after attending a rally for Ascend...</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
 
