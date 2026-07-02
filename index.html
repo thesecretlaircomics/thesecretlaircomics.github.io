@@ -6,6 +6,7 @@
     <title>The Secret Lair | Comics, Toys, Games</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        /* Two-column layout for the pull list */
         .two-column-list {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -14,7 +15,7 @@
         }
         @media (max-width: 768px) {
             .two-column-list {
-                grid-template-columns: 1fr;
+                grid-template-columns: 1fr; /* Stacks into one column on small phones */
             }
         }
     </style>
