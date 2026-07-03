@@ -104,7 +104,7 @@ main {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Color Modifier Classes */
+/* Color Modifier Classes - Add these to a div to change its border! */
 .card-green {
     border-left-color: #32CD32;
 }
@@ -115,13 +115,6 @@ main {
 
 .card-yellow {
     border-left-color: #ffcc00;
-}
-
-.card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-    color: #ffcc00; /* Yellow headers inside the boxes */
 }
 
 .card h3 {
