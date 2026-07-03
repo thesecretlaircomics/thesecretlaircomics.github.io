@@ -99,9 +99,29 @@ main {
     background-color: #1e1e24;
     padding: 1.5rem;
     border-radius: 12px;
-    /* The red strip on the left side of every box */
+    /* Sets the default border size and style, defaulting to red */
     border-left: 4px solid #cc0000; 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Color Modifier Classes */
+.card-green {
+    border-left-color: #32CD32;
+}
+
+.card-blue {
+    border-left-color: #0088cc;
+}
+
+.card-yellow {
+    border-left-color: #ffcc00;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    color: #ffcc00; /* Yellow headers inside the boxes */
 }
 
 .card h3 {
